@@ -1,0 +1,15 @@
+1. Predicted Output
+undefined
+ReferenceError: Cannot access 'b' before initialization
+
+(a) Why does a print undefined?
+The variable a is declared using var, which is hoisted to the top of its scope during execution. While the declaration is moved up, the value assignment happens later. Therefore, at the time of console.log(a), the variable exists but has no value yet, resulting in undefined.
+
+(b) Why does b throw an error?
+The variable b is declared using let. Even though it is hoisted, it is not accessible before its declaration due to the Temporal Dead Zone. Trying to use b before it is initialized leads to a ReferenceError.
+
+(c) Why is c undefined inside the function?
+The variable c is declared with var inside the function. Because of hoisting, c is created at the start of the function execution but gets its value later. Hence, when it is logged before assignment, it outputs undefined.
+
+3. Line that causes the error
+console.log(b);
