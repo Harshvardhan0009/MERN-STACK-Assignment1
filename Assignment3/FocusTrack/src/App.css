@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 28px;
+}
+
+.input-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.message-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.message-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.submit-btn,
+.focus-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.submit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+.focus-btn {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.focus-btn:hover {
+  background-color: #27ae60;
+}
+
+.focus-btn:active {
+  transform: scale(0.98);
+}
+
+.focus-count {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.messages-section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.message-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.message-list li {
+  padding: 8px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.history-section {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+.history-section p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.history-section strong {
+  color: #2c3e50;
+}

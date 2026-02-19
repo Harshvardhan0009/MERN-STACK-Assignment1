@@ -1,0 +1,46 @@
+.app {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.character-info {
+  margin-top: 15px;
+}
+
+.character-info p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.warning {
+  color: #d32f2f;
+  font-weight: bold;
+}
